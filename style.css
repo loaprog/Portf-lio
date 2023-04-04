@@ -1,0 +1,782 @@
+ @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap');
+
+
+
+ * {
+     margin: 0;
+     padding: 0;
+ }
+
+ .navigation {
+     border-radius: 20px;
+     margin: 0 auto;
+     width: fit-content;
+     /* Adiciona 20px de espaço acima do menu */
+     position: fixed;
+     /* fixa o menu no topo da página */
+     z-index: 9999;
+     /* Valor alto de z-index */
+
+
+     top: 20px;
+     /* define a posição do menu 20px abaixo do topo da página */
+     left: 30%;
+     /* define a posição do menu no meio da página */
+
+     display: flex;
+     justify-content: center;
+     padding: 1.0rem 1rem;
+     font-family: 'Fira Code', monospace;
+     background-color: #322460;
+
+ }
+
+
+
+ .navigation ul {
+     display: flex;
+     align-items: center;
+     list-style: none;
+ }
+
+ .navigation ul li {
+     margin: 0 30px;
+
+ }
+
+ .navigation ul a {
+     text-decoration: none;
+     color: azure;
+     font-size: 20px;
+ }
+
+ .navigation ul a::before {
+     content: "#";
+     color: #C778DD;
+
+ }
+
+ .navigation ul li a:hover {
+     color: #C778DD;
+     transform: scale(1.1);
+     transition: all 0.3s ease-in-out;
+ }
+
+
+ body {
+     background-color: #090E16;
+     margin-top: 10px;
+
+ }
+
+ .avatar img {
+     position: absolute;
+     top: 50%;
+     left: 80%;
+     transform: translate(-50%, -50%);
+ }
+
+
+
+ .saudacoes img {
+     position: absolute;
+     margin-left: 14%;
+     margin-top: -25.8%;
+     align-items: center;
+     object-fit: contain;
+
+
+ }
+
+
+ .nome {
+     display: flex;
+     margin-left: 15%;
+     align-items: center;
+     height: 80vh;
+
+
+     text-decoration: none;
+     color: azure;
+     font-size: 60px;
+     font-family: 'Raleway', sans-serif;
+     font-weight: 800;
+ }
+
+ .nome :hover,
+ .active {
+     transform: scale(1.1);
+     transition: all 1.5s ease-in-out;
+ }
+
+
+ .cargo {
+     position: absolute;
+     margin-left: 14%;
+     margin-top: -18.3%;
+     align-items: center;
+
+
+     text-decoration: none;
+     color: azure;
+     opacity: 0.5;
+     font-size: 15px;
+     font-family: 'Source Code Pro', monospace;
+
+ }
+
+ .itens {
+     position: absolute;
+     margin-left: 14%;
+     margin-top: -16%;
+     align-items: center;
+ }
+
+ .page2 {
+     position: absolute;
+     margin-left: 14%;
+     margin-top: -15%;
+     align-items: center;
+
+     display: flex;
+     margin-left: 5%;
+     align-items: center;
+     height: 60vh;
+     color: rgb(0, 0, 0);
+     font-size: 40px;
+     font-family: 'Fira Code', monospace;
+ }
+
+ .page2 ::before {
+     content: "#";
+     color: #C778DD;
+     margin-top: 40px;
+ }
+
+ .strong {
+
+     color: rgb(0, 0, 0);
+     font-size: 50px;
+     font-family: 'Fira Code', monospace;
+ }
+
+ .descricao1 {
+     display: flex;
+     flex-direction: column;
+     margin-left: 5.5%;
+     align-items: left;
+     color: rgb(61, 61, 61);
+     font-size: 20px;
+     font-family: 'Source Code Pro', monospace;
+     margin-top: 165px;
+     gap: 1.5em;
+     width: 60%;
+     text-align: justify;
+
+ }
+
+
+
+ .eu {
+     position: absolute;
+     top: 155%;
+     left: 80%;
+     transform: translate(-50%, -50%);
+ }
+
+ section {
+     height: 90vh;
+     margin: 0;
+     padding: 4.5rem 4rem;
+ }
+
+ section:nth-of-type(2n) {
+
+
+     /*AQUIIIIIIIIIIIIIIIIIIIIIIIIIIII */
+     background-color: #ffffff;
+ }
+
+ section:last-of-type {
+     height: 90vh;
+ }
+
+ section3 {
+     height: 90vh;
+     margin: 0;
+     padding: 4.5rem 4rem;
+ }
+
+ section3:nth-of-type(2n) {
+     background-color: #fff;
+ }
+
+ section3:last-of-type {
+     height: 90vh;
+ }
+
+ .page3 {
+     position: absolute;
+     margin-left: 14%;
+     margin-top: -15%;
+     align-items: center;
+
+     display: flex;
+     margin-left: 5%;
+     align-items: center;
+     height: 60vh;
+     color: rgb(255, 255, 255);
+     font-size: 40px;
+     font-family: 'Fira Code', monospace;
+ }
+
+ .page3 ::before {
+     content: "#";
+     color: #C778DD;
+     margin-top: 40px;
+ }
+
+
+ .descricao2 ul li {
+     display: inline-block;
+     border-radius: 29px;
+     background-color: #fff;
+     width: 270px;
+     height: 270px;
+     margin-top: -2%;
+     margin-right: 40px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+
+ }
+
+
+
+ .descricao2 ul {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin: 0 auto;
+     font-family: 'Source Code Pro', monospace;
+     color: #322460;
+     margin-top: 200px;
+ }
+
+ .descricao2 ul li img {
+     object-fit: contain;
+     max-width: 100%;
+     max-height: 100%;
+     margin-bottom: 50px;
+     color: #C778DD;
+     transform: scale(1.1);
+     transition: all 0.3s ease-in-out;
+ }
+
+
+ .descricao3 ul li {
+     display: inline-block;
+     border-radius: 29px;
+     background-color: #fff;
+     width: 270px;
+     height: 270px;
+     margin-right: 40px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+ }
+
+ .descricao3 ul {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin: 0 auto;
+     font-family: 'Source Code Pro', monospace;
+     color: #322460;
+     margin-top: 50px;
+ }
+
+ .descricao3 ul li img {
+     object-fit: contain;
+     max-width: 100%;
+     max-height: 100%;
+     margin-bottom: 50px;
+ }
+
+ section4 {
+     height: 80vh;
+     padding: 5.5rem 4rem 4.5rem 4rem;
+ }
+
+ section4:last-of-type {
+     height: 80vh;
+ }
+
+
+ .page4 {
+     position: absolute;
+     margin-left: 14%;
+     margin-top: -15%;
+     align-items: center;
+
+     display: flex;
+     margin-left: 5%;
+     align-items: center;
+     height: 60vh;
+     color: rgb(0, 0, 0);
+     font-size: 40px;
+     font-family: 'Fira Code', monospace;
+ }
+
+ .page4 ::before {
+     content: "#";
+     color: #C778DD;
+     margin-top: 40px;
+ }
+
+
+
+ .descricao2 ul li:hover,
+ .active {
+     transform: scale(1.1);
+     transition: all 0.4s ease-in-out;
+ }
+
+ .descricao3 ul li:hover,
+ .active {
+     transform: scale(1.1);
+     transition: all 0.4s ease-in-out;
+ }
+
+
+
+
+ /*nova pagina teste */
+ .marker {
+     -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+     box-sizing: border-box;
+     outline: none;
+ }
+
+
+ h1 span {
+     font-weight: 600;
+ }
+
+
+
+
+ .container {
+     top: -102px;
+     width: 80%;
+     padding: 50px 0;
+     margin: 50px auto;
+     position: relative;
+     overflow: hidden;
+ }
+
+ .container:before {
+     content: '';
+     position: absolute;
+     top: 20;
+     left: 50%;
+     margin-left: -1px;
+     width: 2px;
+     height: 90%;
+     background: #322460;
+     z-index: 1
+ }
+
+ .timeline-block {
+     width: -webkit-calc(50% + 8px);
+     width: -moz-calc(50% + 8px);
+     width: calc(50% + 8px);
+     display: -webkit-box;
+     display: -webkit-flex;
+     display: -moz-box;
+     display: flex;
+     -webkit-box-pack: justify;
+     -webkit-justify-content: space-between;
+     -moz-box-pack: justify;
+     justify-content: space-between;
+     clear: both;
+ }
+
+ .timeline-block-right {
+     float: right;
+ }
+
+ .timeline-block-left {
+     float: left;
+     direction: rtl
+ }
+
+ .marker {
+     width: 16px;
+     height: 16px;
+     border-radius: 50%;
+     border: 9px solid #322460;
+     background: #322460;
+     margin-top: 10px;
+     z-index: 9999
+ }
+
+ .timeline-content {
+     width: 95%;
+     padding: 0 25px;
+     color: #000000;
+     font-family: 'Fira Code', monospace;
+
+ }
+
+ .timeline-content h3 {
+     margin-top: 5px;
+     margin-bottom: 5px;
+     font-size: 20px;
+     font-weight: 500
+ }
+
+ .timeline-content strong {
+     font-size: 15px;
+     color: #322460;
+     font-family: 'Source Code Pro', monospace;
+
+ }
+
+ .timeline-content p {
+     font-size: 15px;
+     line-height: 1.5em;
+     word-spacing: 1px;
+     margin-top: 3px;
+     color: #1f1f1f;
+     font-family: 'Fira Code', monospace;
+
+ }
+
+
+
+
+ .section-Carreira {
+     height: 2%;
+     margin: 0;
+     padding: 4.5rem 4rem;
+     background-color: #ff0000;
+ }
+
+
+
+ @media screen and (max-width: 768px) {
+     .container:before {
+         left: 8px;
+         width: 2px;
+     }
+
+     .timeline-block {
+         width: 100%;
+         margin-bottom: 30px;
+     }
+
+     .timeline-block-right {
+         float: none;
+     }
+
+     .timeline-block-left {
+         float: none;
+         direction: ltr;
+     }
+ }
+
+
+
+
+
+
+
+
+ /* proxima pagina 5 */
+ .page5 {
+     position: absolute;
+     margin-left: 14%;
+     margin-top: -15%;
+     align-items: center;
+
+     display: flex;
+     margin-left: 5%;
+     align-items: center;
+     height: 60vh;
+     color: rgb(255, 255, 255);
+     font-size: 40px;
+     font-family: 'Fira Code', monospace;
+ }
+
+ .page5 ::before {
+     content: "#";
+     color: #C778DD;
+     margin-top: 40px;
+ }
+
+ .descricao5 {
+     font-size: 80PX;
+     color: rgb(255, 255, 255);
+     display: flex;
+     margin-top: 25%;
+     justify-content: center;
+     font-family: 'Source Code Pro', monospace;
+ }
+
+
+
+ /* The image flickering is caused by the drop-shadow in the :before filter. So if you want remove it. */
+ .containerr {
+     width: 100%;
+     height: 100%;
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: flex;
+     -ms-flex-flow: column wrap;
+     flex-flow: column wrap;
+     -webkit-box-pack: center;
+     -ms-flex-pack: center;
+     justify-content: center;
+     -webkit-box-align: center;
+     -ms-flex-align: center;
+     align-items: center;
+     background-color: #2196F3;
+ }
+
+ /* for background beginning */
+
+ .containerr>.banner {
+     background-color: #000000;
+     position: absolute;
+     border-radius: 50px;
+     border: 1px solid #ffffff;
+     /* borda de 1 pixel preta */
+     padding: 50px;
+     /* preenchimento interno de 10 pixels */
+     z-index: 2;
+
+
+ }
+
+
+ /* for background end */
+
+
+ .containerr>.banner>p {
+     color: #ffffff;
+     -ms-flex-item-align: center;
+     align-self: center;
+     text-transform: uppercase;
+     font-size: 13px;
+ }
+
+ .containerr>.banner>a {
+     color: #ffffff;
+     height: auto;
+     text-align: center;
+     text-transform: uppercase;
+     -webkit-box-pack: center;
+     -ms-flex-pack: center;
+     justify-content: center;
+     -ms-flex-item-align: center;
+     align-self: center;
+ }
+
+ .containerr>.banner>a>p {
+     margin: 3px 6px;
+ }
+
+ .containerr>.banner>a>i {
+     color: #000000;
+ }
+
+ .containerr>.banner>a>i:before {
+     display: inline-block;
+     /* filter: drop-shadow(0px 2px 5px rgba(0,0,0,0.26)); -webkit-filter: drop-shadow(0px 2px 5px rgba(0,0,0,0.26)); */
+     color: #0D47A1;
+     content: url("avatar/dronebranco.png");
+     position: relative;
+     top: 0px;
+     left: 30px;
+     z-index: 1;
+     transition: 400ms left ease-in-out;
+     -webkit-transition: 400ms left ease-in-out;
+ }
+
+
+ .containerr>.banner>a.active>i:before,
+ .containerr>.banner>a:hover>i:before,
+ .containerr>.banner>a:focus>i:before {
+     animation: paper-plane 4s ease-in-out;
+     -webkit-animation: paper-plane 4s ease-in-out;
+ }
+
+
+ /* animation beginning */
+
+ @-webkit-keyframes paper-plane {
+     0% {
+         left: 23px;
+         top: 0px;
+         -webkit-transform: rotate(0deg);
+     }
+
+     20% {
+         left: 125px;
+         -webkit-transform: rotate(-90deg);
+     }
+
+     40% {
+         top: -60px;
+         -webkit-transform: rotate(-180deg);
+     }
+
+     60% {
+         left: -225px;
+         -webkit-transform: rotate(-270deg);
+     }
+
+     80% {
+         top: 0px;
+         -webkit-transform: rotate(-360deg);
+     }
+
+     100% {
+         left: 23px;
+         -webkit-transform: rotate(-360deg);
+     }
+ }
+
+ @keyframes paper-plane {
+     0% {
+         left: 23px;
+         top: 0px;
+         -webkit-transform: rotate(0deg);
+         transform: rotate(0deg);
+     }
+
+     20% {
+         left: 125px;
+         -webkit-transform: rotate(-90deg);
+         transform: rotate(-90deg);
+     }
+
+     40% {
+         top: -60px;
+         -webkit-transform: rotate(-180deg);
+         transform: rotate(-180deg);
+     }
+
+     60% {
+         left: -225px;
+         -webkit-transform: rotate(-270deg);
+         transform: rotate(-270deg);
+     }
+
+     80% {
+         top: 0px;
+         -webkit-transform: rotate(-360deg);
+         transform: rotate(-360deg);
+     }
+
+     100% {
+         left: 23px;
+         -webkit-transform: rotate(-360deg);
+         transform: rotate(-360deg)
+     }
+ }
+
+
+ /* animation end */
+
+
+ /* global classes beginning */
+
+ .heading {
+     color: #222;
+ }
+
+ .text {
+     font-family: Josefin Sans, sans-serif;
+     cursor: default;
+ }
+
+ .text.nodecoration {
+     text-decoration: none;
+     cursor: pointer;
+ }
+
+ .text.black {
+     color: #444;
+ }
+
+ .text.white {
+     color: #F5F3F3;
+ }
+
+ .text.outline {
+     -webkit-text-fill-color: transparent;
+     -webkit-text-stroke-width: 2px;
+ }
+
+ .text.outline.white {
+     -webkit-text-stroke-color: #FCFCFC;
+ }
+
+ .text.outline.black {
+     -webkit-text-stroke-color: #444;
+ }
+
+ .offwhite-light {
+     background-color: #FCFCFC;
+ }
+
+ .offwhite-dark {
+     background-color: #F5F3F3;
+ }
+
+ .uppercase {
+     text-transform: uppercase;
+ }
+
+ .shadow {
+     box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.26);
+ }
+
+ .shadow.bottom {
+     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.26);
+ }
+
+ .shadow.top {
+     box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.26);
+ }
+
+ .shadow.tobo {
+     box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.26), 0px 2px 5px rgba(0, 0, 0, 0.26);
+ }
+
+ .flex {
+     display: -webkit-inline-box;
+     display: -ms-inline-flexbox;
+     display: inline-flex;
+ }
+
+ .flex.vertical {
+     -ms-flex-flow: column wrap;
+     flex-flow: column wrap;
+ }
+
+ .flex.horizontal {
+     -ms-flex-flow: row wrap;
+     flex-flow: row wrap;
+ }
+
+
+ /* global classes end */
